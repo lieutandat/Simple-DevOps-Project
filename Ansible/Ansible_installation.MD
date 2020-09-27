@@ -52,6 +52,16 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    usermod -aG docker ansadmin
 
    ```
+1. To allow login remote. open 
+```sh
+vi /etc/ssh/sshd_config
+```
+update PasswordAuthentication to yes
+
+```sh
+PasswordAuthentication yes
+```
+
 1. Create a directory /etc/ansible and create an inventory file called "hosts" add control node and managed hosts IP addresses to it. 
  
 ### Validation test
