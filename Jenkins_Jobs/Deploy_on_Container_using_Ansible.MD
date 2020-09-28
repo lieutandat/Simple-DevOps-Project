@@ -5,7 +5,12 @@
 
 1. Jenkins server 
 1. Docker-host server 
-1. Ansible server
+1. Ansible server:
+```sh
+   cd /opt
+   sudo mkdir docker
+   sudo chown -R ansadmin:ansadmin /opt/docker
+```
 1. `Dockerfile` under *`/opt/docker`* on Ansible server **[Get Help Here]()**
    ```sh 
    # Pull tomcat latest image from dockerhub 
